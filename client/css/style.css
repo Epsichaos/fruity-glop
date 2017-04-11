@@ -1,0 +1,17 @@
+body, html {
+    height: 100%
+}
+
+.angular-view {
+    height: 100%
+}
+
+.main-wrapper {
+    margin-top: 2em;
+}
+
+.header-image {
+    background-color: black;
+    height: 70%;
+    width: 100%;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="client/lib/bootstrap4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="client/css/style.css">
+
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async
+            src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body ng-app="bootblog">
+
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-danger fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><img alt="Brand" src="client/img/navbar-brand.gif" width="30px"></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#/contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div ng-view class="angular-view"></div>
+
+<script type="text/javascript" src="node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="client/lib/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="client/lib/bootstrap4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="client/app.js"></script>
+</body>
+</html>
