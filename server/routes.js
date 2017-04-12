@@ -5,10 +5,6 @@ var Article = require('./model/articles');
 
 mongoose.connect('mongodb://localhost/sandbox');
 
-app.get('/toto', function(req, res) {
-  console.log('GET request on /toto');
-});
-
 app.post('/articles', function(req, res) {
   console.log('Received: ' + req.body.title +', ' + req.body.content);
   var article = new Article({
