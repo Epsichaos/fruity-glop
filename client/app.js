@@ -5,7 +5,8 @@ app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     $routeProvider
         .when('/', {
-            templateUrl: 'client/views/home.htm'
+            templateUrl: 'client/views/home.htm',
+            controller: 'HomeCtrl'
         })
         .when('/about', {
              templateUrl: 'client/views/about.htm'

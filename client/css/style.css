@@ -14,4 +14,20 @@ body, html {
     background-color: black;
     height: 70%;
     width: 100%;
+    margin-bottom: 1em;
+}
+
+.article-container {
+  margin-top: 1.5em;
+}
+
+.article-container > h3 {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 1em;
+  color: rgb(108, 122, 137);
+}
+
+.article-abstract {
+  margin-bottom: 2em;
 }
