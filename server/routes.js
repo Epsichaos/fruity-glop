@@ -5,6 +5,7 @@ var Article = require('./model/articles');
 
 mongoose.connect('mongodb://localhost/sandbox');
 
+/* POST ARTICLE ROUTE */
 app.post('/articles', function(req, res) {
   console.log('Received: ' + req.body.title +', ' + req.body.content);
   var article = new Article({
@@ -23,6 +24,7 @@ app.post('/articles', function(req, res) {
   })
 });
 
+/* GET ALL ARTICLES ROUTE */
 app.get('/articles', function(req, res) {
   Article.find({}, function(err, article) {
     if(err) {
@@ -32,6 +34,7 @@ app.get('/articles', function(req, res) {
   })
 });
 
+/* GET ARTICLE FROM ROUTE */
 app.get('/article/:id', function(req, res) {
   console.log('GET article');
   Article.findOne({}, function(err, article) {
